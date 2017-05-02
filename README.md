@@ -1,6 +1,6 @@
 # OpenVPN mesh networking
 A talk to be given at the AWS meetup
-on ???
+on 16 May 2017
 
 ## Blurb
 AWS provides a service whereby two [VPCs][AWS-VPC] can be linked, but what if you want to link more than two VPCs, or you aren't using AWS?  This talk describes a peer-to-peer arrangement (i.e. no central VPN server) that allows this using IPv4.  For brevity, each VPC and/or physical network that is to be linked is hereafter referred to as a LAN.
