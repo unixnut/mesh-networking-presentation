@@ -38,7 +38,6 @@ P2P-VPN is open source software, but was developed with the intent of being used
   1. Distribute config
   1. Add routes
   1. Modify firewall rules / Security Groups
-  1. BGP recommended for large deployments
 1. Gotchas
   1. Non-overlapping LAN network ranges
   1. ClassicLink
@@ -47,6 +46,7 @@ P2P-VPN is open source software, but was developed with the intent of being used
   1. Interaction with regular VPNs
   1. High availability (HA)
   1. Fully peer-to-peer, i.e. either end of each link can initiate
+  1. BGP recommended for large deployments
   
 
 ## Presenter bio
