@@ -11,13 +11,43 @@ Adding new LANs to the mesh is possible, but requires the config of all other LA
 
 P2P-VPN is open source software, but was developed with the intent of being used in commercial environments.  There is already at least one commercial user.  If you wish to make a financial contributution to encourage the developer to maintain this and other open source software, please contact Alastair Irvine via [Warpspace IT](http://www.warpspace.net/).
 
-[AWS-VPC]: https://aws.amazon.com/vpc/
-[RFC1918]: http://www.faqs.org/rfcs/rfc1918.html "Address Allocation for Private Internets"
-[VPC-NAT]: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_NAT_Instance.html
+  [AWS-VPC]: https://aws.amazon.com/vpc/
+  [RFC1918]: http://www.faqs.org/rfcs/rfc1918.html "Address Allocation for Private Internets"
+  [VPC-NAT]: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_NAT_Instance.html
 
 ## Outline
 
-**TBA**
+1. Introduction
+  1. Background
+  1. AWS VPCs
+  1. Types of VPN
+1. Solution summary
+  1. Topology diagram
+  1. Details
+  1. Special VPN CIDR address range required
+1. AWS
+  1. Why not use VPC Peering Connections?
+  1. NAT instance vs. NAT Gateway
+  1. Subnets and route tables
+  1. Security Groups
+  1. Don't forget to turn off "Source address check" on VPN instances
+1. P2P-VPN
+  1. Code snippets
+1. Adding a new LAN
+  1. Track LAN numbers!
+  1. Distribute config
+  1. Add routes
+  1. Modify firewall rules / Security Groups
+  1. BGP recommended for large deployments
+1. Gotchas
+  1. Non-overlapping LAN network ranges
+  1. ClassicLink
+  1. Public vs. private IP addresses for servers with both
+1. Further considerations
+  1. Interaction with regular VPNs
+  1. High availability (HA)
+  1. Fully peer-to-peer, i.e. either end of each link can initiate
+  
 
 ## Presenter bio
 
